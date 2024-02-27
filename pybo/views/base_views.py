@@ -5,7 +5,11 @@ from django.db.models import Q, Count
 from ..models import Question
 
 
+import logging
+logger = logging.getLogger('pybo')
+
 def index(request):
+    logger.info("INFO 레벨로 출력")
     """
     Pybo 목록 출력
     """
